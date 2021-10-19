@@ -5,10 +5,13 @@ public class Main {
     public static void main(String[] args) {
 
         Painter master1 = new Painter();
+        //características / clases
         master1.name = "Doménikos Theotokópoulos";
         master1.origin = "Greece";
         master1.born = 1541;
+        //objeto / instancia
         master1.how();
+        //acción / atributos / comportamiento
         master1.dead();
 
         Painter master2 = new Painter();
@@ -38,5 +41,12 @@ public class Main {
         master5.born = 1969;
         master5.how();
         master5.doing();
+
+        Painter master6 = new Painter("Guillermo Lorca García-Huidobro");
+
+        Painter master7 = new Painter("Francis Bacon","Ireland",1909);
+        master7.how();
+        master7.dead();
+
     }
 }

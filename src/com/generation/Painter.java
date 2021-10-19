@@ -5,8 +5,22 @@ public class Painter {
     String origin;
     int born;
 
+    public Painter() {
+
+    }
+
+    public Painter(String name) {
+        this.name = name;
+    }
+
+    public Painter (String name, String origin, int born){
+        this.name = name;
+        this.origin = origin;
+        this.born = born;
+    }
+
     public void how(){
-        System.out.println("I am " +this.name+ ", from " +this.origin+ " and I born in " +this.born+ ".");
+        System.out.println("I am " +this.name+ ", from " +this.origin+ ", borned in " +this.born+ ".");
     }
 
     public void dead(){
